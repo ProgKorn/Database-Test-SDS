@@ -8,8 +8,8 @@ async function run() {
   try {
     await client.connect();
     // database and collection code goes here
-    const db = client.db("StudentDetails");
-    const coll = db.collection("SoftwareDesignStudio");
+    const db = client.db("SoftwareDesignStudio");
+    const coll = db.collection("StudentDetails");
 
     // insert code goes here
     const docs = [

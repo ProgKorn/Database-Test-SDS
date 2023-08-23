@@ -8,11 +8,11 @@ async function run() {
   try {
     await client.connect();
     // database and collection code goes here
-    const db = client.db("StudentDetails");
-    const coll = db.collection("SoftwareDesignStudio");
+    const db = client.db("SoftwareDesignStudio");
+    const coll = db.collection("StudentDetails");
 
     // find code goes here
-    const cursor = coll.find({ studentId : '12345678' });
+    const cursor = coll.find({ studentId : 12345678 });
 
     // iterate code goes here
     await cursor.forEach(console.log);
